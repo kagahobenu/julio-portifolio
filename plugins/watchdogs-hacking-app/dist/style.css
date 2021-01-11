@@ -1,0 +1,213 @@
+* {
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+}
+
+.iphone-6-container {
+  width: 414px;
+  height: 736px;
+  display: block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.iphone-6-container .top {
+  height: 40%;
+  background: url(http://blogs-images.forbes.com/insertcoin/files/2016/01/watch-dogs2-1200x675.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.iphone-6-container .top::after {
+  content: "";
+  height: 294.391px;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+}
+.iphone-6-container .top .logo {
+  background: url(http://tesall.ru/uploads/imgs/pre_1395943617__tumblr_mnow5b1p2k1s3vygao1_500.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  -webkit-filter: invert(100%);
+}
+.iphone-6-container .top h2 {
+  font-size: 45px;
+  margin: 0px;
+  font-weight: lighter;
+}
+.iphone-6-container .top .logo, .iphone-6-container .top h2 {
+  position: relative;
+  z-index: 20;
+}
+.iphone-6-container .bottom {
+  height: 60%;
+  background: linear-gradient(60deg, rgba(18, 19, 30, 0.7) 0%, rgba(69, 72, 105, 0.9) 100%);
+  background: rgba(18, 19, 30, 0.9);
+  position: relative;
+}
+.iphone-6-container .bottom h3 {
+  margin: 0px;
+  padding: 25px 0px 15px;
+  text-align: center;
+  font-weight: lighter;
+}
+.iphone-6-container .bottom .loader {
+  width: 75%;
+  height: 25px;
+  border: 1px solid #fff;
+  margin: 0 auto;
+}
+.iphone-6-container .bottom .loader span {
+  height: 25px;
+  display: block;
+  width: 0%;
+  background: white;
+  -webkit-animation: loader 3s linear forwards;
+          animation: loader 3s linear forwards;
+}
+.iphone-6-container .bottom .hacks {
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 25px;
+}
+.iphone-6-container .bottom .hacks .hack {
+  background: white;
+  padding: 10px;
+  margin-bottom: 25px;
+  transform: translateX(-500px);
+  opacity: 0;
+}
+.iphone-6-container .bottom .hacks .hack.load-in {
+  -webkit-animation: hacks 250ms linear forwards;
+          animation: hacks 250ms linear forwards;
+}
+.iphone-6-container .bottom .hacks .hack h4, .iphone-6-container .bottom .hacks .hack h5, .iphone-6-container .bottom .hacks .hack p {
+  margin: 0px;
+  color: rgba(18, 19, 30, 0.9);
+}
+.iphone-6-container .bottom .hacks .hack .hack-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iphone-6-container .bottom .hacks .hack .hack-info h4 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.iphone-6-container .bottom .hacks .hack .hack-info .distance {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(18, 19, 30, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.iphone-6-container .bottom .hacks .hack .hack-options {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: flex;
+}
+.iphone-6-container .bottom .hacks .hack .hack-options li {
+  text-align: center;
+}
+.iphone-6-container .bottom .hacks .hack .hack-options li a {
+  display: block;
+  padding: 10px;
+  background: rgba(18, 19, 30, 0.9);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.iphone-6-container .bottom .hacks .hack .hack-options li a:hover {
+  background: rgba(28, 29, 46, 0.9);
+}
+.iphone-6-container .bottom .hacks .hack.traffic-lights .hack-options li {
+  width: 33.33333%;
+}
+.iphone-6-container .bottom .hacks .hack.bridge .hack-options li {
+  width: 50%;
+}
+.iphone-6-container .bottom .hacks .hack.atm .hack-options li {
+  width: 100%;
+}
+.iphone-6-container .bottom .user-menu {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.iphone-6-container .bottom .user-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.iphone-6-container .bottom .user-menu ul li {
+  width: 25%;
+  text-align: center;
+  background: white;
+}
+.iphone-6-container .bottom .user-menu ul li a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: rgba(18, 19, 30, 0.9);
+}
+
+@-webkit-keyframes loader {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 40%;
+  }
+  50% {
+    width: 45%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 40%;
+  }
+  50% {
+    width: 45%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes hacks {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes hacks {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

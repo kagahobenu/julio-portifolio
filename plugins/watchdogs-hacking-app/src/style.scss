@@ -1,0 +1,204 @@
+$blue: rgba(18,19,30,0.9);
+
+*{
+  font-family: 'Alegreya Sans', sans-serif;
+  color: white;
+}
+
+.iphone-6-container{
+  width: 414px;
+  height: 736px;
+  display: block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 5px;
+  .top{
+    height: 40%;
+    background: url(http://blogs-images.forbes.com/insertcoin/files/2016/01/watch-dogs2-1200x675.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::after{
+      content: '';
+      height: 294.391px;
+      width: 100%;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .logo{
+      background: url(http://tesall.ru/uploads/imgs/pre_1395943617__tumblr_mnow5b1p2k1s3vygao1_500.png) no-repeat center;
+      background-size: cover;
+      width: 100px;
+      height: 100px;
+      -webkit-filter: invert(100%);
+    }
+    h2{
+      font-size: 45px;
+      margin: 0px;
+      font-weight: lighter;
+    }
+    .logo, h2{
+      position: relative;
+      z-index: 20;
+    }
+  }
+  .bottom{
+    height: 60%;
+    background: linear-gradient(60deg, rgba(18,19,30,0.7) 0%, rgba(69,72,105,0.9) 100%);
+    background: rgba(18,19,30,0.9);
+    position: relative;
+    h3{
+      margin: 0px;
+      padding: 25px 0px 15px;
+      text-align: center;
+      font-weight: lighter;
+    }
+    .loader{
+      width: 75%;
+      height: 25px;
+      border: 1px solid #fff;
+      margin: 0 auto;
+      span{
+        height: 25px;
+        display: block;
+        width: 0%;
+        background: white;
+        animation: loader 3s linear forwards;
+      }
+    }
+    .hacks{
+      width: 90%;
+      margin: 0px auto;
+      padding-top: 25px;
+      .hack{
+        background: white;
+        padding: 10px;
+        margin-bottom: 25px;
+        transform: translateX(-500px);
+        opacity: 0;
+        // transform: scale(0);
+        &.load-in {
+          animation: hacks 250ms linear forwards;
+          // -webkit-animation-delay: 3.1s;
+          // animation-delay: 3.1s;
+        }
+        h4, h5, p{
+          margin: 0px;
+          color: $blue;
+        }
+        .hack-info{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h4{
+            font-size: 18px;
+            font-weight: lighter;
+          }
+          .distance{
+            width: 40px;
+            height: 40px;
+            border: 2px solid $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1;
+            border-radius: 100%;
+            cursor: pointer;
+          }
+        }
+        .hack-options{
+          list-style: none;
+          margin: 10px 0 0 0;
+          padding: 0;
+          display: flex;
+          li{
+            text-align: center;
+            a{
+              display: block;
+              padding: 10px;
+              background: $blue;
+              text-decoration: none;
+              transition: all 200ms ease-in-out;
+              &:hover{
+                background: lighten($blue, 5%);
+              }
+            }
+          }
+        }
+        &.traffic-lights{
+          .hack-options{
+            li{
+              width: 33.33333%;
+            }
+          }
+        }
+        &.bridge{
+          .hack-options{
+            li{
+              width: 50%;
+            }
+          }
+        }
+        &.atm{
+          .hack-options{
+            li{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .user-menu{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        li{
+          width: 25%;
+          text-align: center;
+          background: white;
+          a{
+            display: block;
+            padding: 15px 10px;
+            text-decoration: none;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes loader{
+  0%{
+    width: 0%;
+  }
+  40%{
+    width: 40%;
+  }
+  50%{
+    width: 45%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@keyframes hacks{
+  0%{
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

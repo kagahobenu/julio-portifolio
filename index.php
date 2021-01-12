@@ -5,10 +5,12 @@
         <title>Início</title>
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="plugins/icomoon/icomoon.css" />
+        <link rel="stylesheet" href="assets/css/index.css" />
     </head>
     <body>
 
         <div class="container">
+            
             <div class="row mt-3 mx-auto">
                 <div class="col-4">
                     <a href="paginas/login.php"><button class="btn btn-outline-primary">Login</button></a> 
@@ -28,7 +30,7 @@
                 <div class="col-4">
                     <a href="pluginsdeterceiros/p2/dist/index.html"><button class="btn btn-outline-dark">Manu Plugin </button></a>
                 </div>
-                
+
             </div>
 
         </div>

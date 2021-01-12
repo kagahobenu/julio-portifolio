@@ -23,7 +23,7 @@
 
             <div class="row mt-3">
                 <div class="col">
-                    <a href="pluginsdeterceiros/p1/dist/index.html"><button class="btn btn-outline-danger">Hermes Plugin 1</button></a>
+                    <a href="pluginsdeterceiros/p1/dist/index.html"><button class="btn btn-outline-danger">Manu Plugin 1</button></a>
                 </div>
                 <div class="col">
                     <a href="pluginsdeterceiros/p2/dist/index.html"><button class="btn btn-outline-dark">Manu Plugin 2</button></a>
